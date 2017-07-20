@@ -1,0 +1,263 @@
+.headerItemTimeNavigation {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 106px;
+}
+.titleHITM {
+    height: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    color: var(--gris-oscuro);
+}
+.contentHITM {
+    height: 70%;
+    width: 100%;
+    display: inline-flex;
+}
+.arrowEastContainerHITM,
+.arrowWestContainerHITM {
+    width: 15%;
+    height: auto;
+}
+.arrowHITM {
+    display: block !important;
+    font-size: 30px;
+    height: 30px;
+    color: var(--gris-oscuro);
+    line-height: 30px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+.westArrowHITM::before {
+    content: "\e1eb" !important;
+    font-family: 'SAP-icons';
+}
+.eastArrowHITM::before {
+    content: "\e066" !important;
+    font-family: 'SAP-icons';
+}
+.rangeContainerHITM {
+    width: 70%;
+    display: block;
+    height: auto;
+}
+.dateContainerHITM {
+    width: 100%;
+    height: 50%;
+    height: 30px;
+    display: flex !important;
+}
+hr {
+    width: 10%;
+    color: var(--gris-oscuro);
+}
+.dayStartDateHITM {
+    font-size: 25px !important;
+    color: var(--gris-oscuro);
+    line-height: 30px;
+}
+.monthStartDateHITM {
+    font-size: 1rem;
+    color: #848f94;
+    line-height: 1rem;
+}
+.buttonHITM {
+    background-color: transparent !important;
+}
+.buttonHITM div {
+    border: none !important;
+    background: transparent;
+}
+.dateContainerHITM {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.buttonHITMDsbld span {
+    color: var(--gris-claro) !important;
+}
+.hiddenHeaderCell {
+    display: none !important;
+}
+/*
+MENU
+*/
+/*
+html.sap-phone #MenuControl .appHeader {
+	
+    background: var(--gris-claro) !important;
+}
+
+html.sap-phone #MenuControl .appHeader .sapMText{
+	
+    color: var(--gris-oscuro) !important;
+}
+
+html.sap-phone .menu{
+    
+    background: var(--gris-claro) !important;
+    height: 100%;
+    position: absolute;
+    width: inherit;
+}
+
+	html.sap-phone .menuText, html.sap-phone .menuTitle , html.sap-phone .menuTextCategoria{
+		
+		color: #666666 !important;
+	}
+*/
+
+.menu {
+    /*background-color: transparent !important;*/
+    
+    background: url(../img/menu-bg.png) repeat;
+    height: 100%;
+    position: absolute;
+    width: inherit;
+}
+.menuTitle {
+    font-size: 15px;
+    padding: 1em 0em 1em 0em;
+    border-bottom: 1px solid white;
+}
+.menuInicio::before {
+      content: '\e070' !important;
+}
+.menuConfiguracion::before {
+      content: '\e0a6' !important;
+}
+.menuImputar::before {
+      content: '\e1a5' !important;
+}
+.menuManager::before {
+      content: '\e0be' !important;
+}
+.menuReportes::before {
+      content: '\e1a9' !important;
+}
+.menuDelegar::before {
+      content: '\e119' !important;
+}
+
+.menuIcon {
+    width: auto;
+    display: block !important;
+    /*margin-left: 10%;
+	margin-right: 10%;*/
+     font-family: 'SAP-icons';
+    font-size: 22px;
+    height: 2rem;
+    color: white;
+    width: 3rem;
+    margin-left: 5%;
+    float: right;
+}
+.menuImage {
+    width: 100%;
+    height: 2px;
+    box-shadow: #EC4A24 2px 3px inset;
+}
+.menuTitleContainer {
+    height: 3rem;
+}
+.menuText,
+.menuTitle {
+    color: #434B4D;
+    display: block;
+    text-align: left;
+    /*margin-left: 25px;*/
+    width: auto;
+    text-align: left;
+}
+.menuText {
+    font-size: 14px !important;
+    color: white;
+    width: 100%;
+    display: block;
+    float: left;
+    vertical-align: middle;
+    align-self: center !important;
+    text-align: left !important;
+    margin-left: 2%;
+    /*text-transform: uppercase;*/
+}
+.menuText:hover {
+    color:  #EC4A24 !important;
+}
+.menuItem {
+   /* margin: 1em 0em 1em 0em;
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    
+    */
+    margin: 1px;
+    display: flex;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 100%;
+    border-bottom: 2px solid #737B82;
+}
+
+.menuSection {
+	 text-align: left !important;
+	 width: 100%;
+    height: 3rem;
+    line-height: 4.5rem !important;
+    font-size: 14px !important;
+    color: white !important;
+    line-height: 30px;
+    align-self: left !important;
+    display: block;
+    float: left;
+    vertical-align: middle;
+    margin-left: 2%;
+	
+}
+
+.menuItemContainer {
+	
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.menuCategoria {
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    width: 100%;
+}
+.menuTextCategoria {
+    text-align: center !important;
+    width: 100%;
+    font-size: 12px !important;
+    color: white !important;
+    line-height: 30px;
+    align-self: center !important;
+    display: block;
+    vertical-align: middle;
+}
+
+#menuCategoria {
+    display: flex;
+    height: 1rem;
+    width: 100%;
+    background-color: initial !important;
+    border: none !important;
+}
+
+.subMenuManagerItem {
+    list-style-type: none;
+    margin-left: 15px;
+}
+.subMenuManagerItemText {
+    text-align: left;
+    width: 100%;
+    color: white !important;
+}
+.subMenuManager {
+    width: 25% !important;
+}
+.subMenuManagerItemText:hover {
+    cursor: pointer !important;
+    border-bottom: 1px solid #EC4A24 !important;
+}
